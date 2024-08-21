@@ -1,9 +1,10 @@
-
 # Sorteador de Números
 
-## Descrição do Projeto
+Este é um projeto de um jogo simples onde o usuário tenta adivinhar um número secreto gerado aleatoriamente. O jogo fornece feedback indicando se o número secreto é maior ou menor do que o chute do usuário.
 
-O **Sorteador de Números** é uma aplicação simples que permite sortear números aleatórios dentro de um intervalo definido pelo usuário. Ele evita a repetição de números, fornecendo uma solução adequada para sorteios e outras aplicações que necessitam de geração de números aleatórios sem repetição.
+## Demonstração
+
+![Demonstração do Jogo](img/jogo.png)
 
 ## Funcionalidades
 
@@ -14,17 +15,21 @@ O **Sorteador de Números** é uma aplicação simples que permite sortear núme
 
 ## Tecnologias Utilizadas
 
-- HTML
-- CSS
-- JavaScript
+- **HTML5**: Para estruturar o conteúdo do sorteador.
+- **CSS3**: Para estilizar e tornar o design atraente e responsivo.
+- **JavaScript**: Para a lógica do sprteador e interação com o usuário.
 
-## Como Utilizar
+## Como executar o projeto
 
-1. Abra o arquivo `index.html` no navegador.
-2. Insira a quantidade de números, o intervalo inicial e final.
-3. Clique no botão "Sortear" para realizar o sorteio.
-4. Os números sorteados aparecerão na tela.
-5. Utilize o botão "Reiniciar" para resetar o sorteio e realizar um novo.
+1. Clone o repositório para sua máquina local.
+
+    git clone [https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/Leandro-Rocha81/Sorteador-de-N-meros.git)
+
+2. Abra o arquivo `https://sorteador-de-n-meros-cwt9zbzku-leandro-rocha81s-projects.vercel.app` no navegador.
+3. Insira a quantidade de números, o intervalo inicial e final.
+4. Clique no botão "Sortear" para realizar o sorteio.
+5. Os números sorteados aparecerão na tela.
+6. Utilize o botão "Reiniciar" para resetar o sorteio e realizar um novo.
 
 ## Melhorias Futuras
 
@@ -32,6 +37,10 @@ O **Sorteador de Números** é uma aplicação simples que permite sortear núme
 - Possibilidade de exportar os números sorteados para um arquivo.
 - Adicionar validações mais robustas para entradas de usuário.
 
-## Contribuições
+## Contribuição
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir uma *issue* ou enviar um *pull request* com melhorias.
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma *issue*, enviar um *pull request* com melhorias ou relatar problemas no repositório.
+
+## Contato
+
+Desenvolvido por Leandro Vitor Santos Rocha. Entre em contato em leandrocomercial81@gmail.com.
