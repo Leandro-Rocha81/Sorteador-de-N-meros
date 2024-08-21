@@ -4,7 +4,7 @@ Este é um projeto de um jogo simples onde o usuário tenta adivinhar um número
 
 ## Demonstração
 
-![Demonstração do Jogo](img/jogo.png)
+![Demonstração do Sorteadorde Números](img/Exemplo.png)
 
 ## Funcionalidades
 
