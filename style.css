@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     color: white;
+    /* Define o box-sizing como border-box para incluir as bordas e o padding no tamanho total dos elementos.
+       Remove a margem e o padding de todos os elementos e define a cor do texto como branco. */
 }
 
 body {
@@ -11,6 +13,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* Aplica um gradiente de fundo ao corpo da página, define a altura como 100% da viewport e usa flexbox
+       para centralizar o conteúdo tanto verticalmente quanto horizontalmente. */
 }
 
 body::before {
@@ -23,6 +27,7 @@ body::before {
     width: 100%;
     height: 100%;
     opacity: 0.4;
+    /* Insere uma imagem de fundo ao corpo como pseudo-elemento antes, repetição desativada e opacidade reduzida para efeito visual. */
 }
 
 .container {
@@ -38,6 +43,8 @@ body::before {
     background-size: 100% 100%;
     position: relative;
     overflow: hidden;
+    /* Define o estilo do contêiner principal, como largura de 80%, altura mínima de 50% da viewport,
+       bordas arredondadas, sombra, fundo com imagem, e configurações de alinhamento e espaçamento dos itens. */
 }
 
 .container__conteudo {
@@ -45,23 +52,26 @@ body::before {
     align-items: center;
     position: relative;
     width: 100%;
+    /* Define um contêiner flexível para os conteúdos internos, centralizando os itens e ocupando 100% da largura disponível. */
 }
 
 .container__informacoes {
     flex: 1;
     padding: 3rem;
+    /* Define o contêiner das informações com flex-grow para ocupar o espaço disponível e aplica um padding de 3rem. */
 }
 
 .container__texto {
     margin: 12px 0;
     display: flex;
     flex-direction: column;
+    /* Estiliza o contêiner de texto, aplicando margem vertical e organizando os elementos internamente em coluna. */
 }
 
 .container__texto-azul {
     color: #1875E8;
     display: block;
-
+    /* Aplica cor azul ao texto e o exibe como bloco, útil para texto inline estilizado. */
 }
 
 .container__campo {
@@ -69,6 +79,8 @@ body::before {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
+    /* Define o layout dos campos de entrada como flex, centraliza verticalmente e espaça horizontalmente
+       os itens com margem inferior de 10px. */
 }
 
 .container__input {
@@ -82,12 +94,15 @@ body::before {
     font-size: 24px;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
+    /* Estiliza os inputs com dimensões fixas, bordas arredondadas, fundo branco, texto azul,
+       fonte definida e padding interno para melhorar a usabilidade. */
 }
 
 .container__botoes {
     display: flex;
     flex-direction: row;
     gap: 1em;
+    /* Define um contêiner flexível para os botões, organizando-os em linha e com um espaçamento de 1em entre eles. */
 }
 
 .container__botao {
@@ -99,6 +114,8 @@ body::before {
     font-weight: 700;
     border: none;
     cursor: pointer;
+    /* Estiliza os botões com bordas arredondadas, fundo azul, padding interno,
+       tamanho de fonte grande e cursor em formato de ponteiro para indicar interatividade. */
 }
 
 .container__botao-desabilitado {
@@ -110,6 +127,7 @@ body::before {
     font-weight: 700;
     border: none;
     cursor: not-allowed;
+    /* Estiliza os botões desabilitados com fundo cinza e cursor indicando que o botão não pode ser clicado. */
 }
 
 h1 {
@@ -119,6 +137,8 @@ h1 {
     font-weight: 700;
     line-height: 100%;
     padding: 2rem;
+    /* Estiliza o título principal com fonte 'Chakra Petch', tamanho grande, estilo e peso normal,
+       e padding para espaçamento interno. */
 }
 
 .texto__paragrafo {
@@ -128,24 +148,30 @@ h1 {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    /* Estiliza o texto dos parágrafos com fonte 'Inter', cor branca e tamanho de 25px, mantendo estilo e peso normais. */
 }
 
 .container__imagem-pessoa {
     max-width: 100%;
     height: auto;
     margin-top: 2rem;
+    /* Define o estilo da imagem com largura máxima de 100% para responsividade e mantém altura automática
+       com uma margem superior de 2rem para espaçamento. */
 }
 
 button:disabled {
     background-color: gray;
+    /* Estiliza os botões desabilitados com fundo cinza. */
 }
 
 @media screen and (max-width: 1250px) {
     .container__imagem-pessoa {
         display: none;
+        /* Oculta a imagem no layout quando a tela for menor que 1250px de largura. */
     }
 
     h1 {
         font-size: 50px;
+        /* Reduz o tamanho do título para 50px em telas menores. */
     }
 }

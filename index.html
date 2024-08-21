@@ -3,53 +3,100 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define o viewport para responsividade, adaptando o layout à largura do dispositivo -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preconexão com o Google Fonts para otimizar o carregamento das fontes -->
+
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Importa as fontes 'Chakra Petch' e 'Inter' do Google Fonts -->
+
     <link rel="stylesheet" href="style.css">
+    <!-- Vincula o arquivo CSS externo para estilização da página -->
+
     <link rel="icon" href="img/icone.png">
+    <!-- Define o ícone da aba do navegador -->
+
     <title>Sorteador de números</title>
+    <!-- Define o título da página -->
 </head>
 
 <body>
     <div class="container">
+        <!-- Container principal que envolve todo o conteúdo da página -->
+
         <div class="container__conteudo">
+            <!-- Subcontainer que organiza o conteúdo -->
+
             <div class="container__informacoes">
+                <!-- Contém os elementos de informações, como títulos e campos de entrada -->
+
                 <div class="container__texto">
+                    <!-- Div para agrupar os elementos textuais -->
+
                     <h1>Sorteador de<span class="container__texto-azul"> Números</span></h1>
+                    <!-- Título principal da página, com parte estilizada em azul -->
 
                     <div class="container__campo">
+                        <!-- Campo de entrada para definir a quantidade de números a serem sorteados -->
+
                         <label class="texto__paragrafo">Quantidade de números a ser sorteados</label>
+                        <!-- Texto explicativo para o campo de entrada -->
+
                         <input class="container__input" id="quantidade" type="number" min="1">
+                        <!-- Campo de entrada do tipo número para inserir a quantidade de números -->
                     </div>
                     
                     <div class="container__campo">
+                        <!-- Campo de entrada para definir o número inicial do intervalo -->
+
                         <label class="texto__paragrafo">A partir de</label>
+                        <!-- Texto explicativo para o campo de entrada -->
+
                         <input class="container__input" id="de" type="number" min="1">
+                        <!-- Campo de entrada do tipo número para inserir o valor inicial -->
                     </div>
                     
                     <div class="container__campo">
+                        <!-- Campo de entrada para definir o número final do intervalo -->
+
                         <label class="texto__paragrafo">Até o número</label>
+                        <!-- Texto explicativo para o campo de entrada -->
+
                         <input class="container__input" id="ate" type="number" min="1">
+                        <!-- Campo de entrada do tipo número para inserir o valor final -->
                     </div>
                 </div>
                 
                 <div class="chute container__botoes">
+                    <!-- Contêiner que organiza os botões de sorteio e reinício -->
+
                     <button onclick="sortear()" id="btn-sortear" class="container__botao">Sortear</button>
-                    <button onclick="reiniciar()" id="btn-reiniciar" class="container__botao-desabilitado" >Reiniciar</button>
+                    <!-- Botão para acionar a função de sorteio -->
+
+                    <button onclick="reiniciar()" id="btn-reiniciar" class="container__botao-desabilitado">Reiniciar</button>
+                    <!-- Botão para acionar a função de reinício -->
                 </div>
 
                 <div class="container__texto" id="resultado">
+                    <!-- Div para exibir o resultado do sorteio -->
+
                     <label class="texto__paragrafo"></label>
+                    <!-- Label onde o resultado será exibido -->
                 </div>
             </div>
 
             <img src="./img/ia.png" alt="Uma pessoa com capacete de astronauta" class="container__imagem-pessoa" />
+            <!-- Imagem decorativa ao lado direito do conteúdo -->
         </div>
     </div>
 
     <script src="app.js" defer></script>
+    <!-- Vincula o arquivo JavaScript externo e adia o carregamento até a página estar totalmente carregada -->
 </body>
 
 </html>
