@@ -23,7 +23,7 @@ Este é um projeto de um jogo simples onde o usuário tenta adivinhar um número
 
 1. Clone o repositório para sua máquina local.
 
-    git clone [https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/Leandro-Rocha81/Sorteador-de-N-meros.git)
+    git clone (https://github.com/Leandro-Rocha81/Sorteador-de-N-meros.git)
 
 2. Abra o arquivo (https://sorteador-de-n-meros-cwt9zbzku-leandro-rocha81s-projects.vercel.app) no navegador.
 3. Insira a quantidade de números, o intervalo inicial e final.
